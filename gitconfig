@@ -1,0 +1,9 @@
+[user]
+	name = Marko Anastasov
+	email = marko@renderedtext.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[push]
+	default = current
