@@ -1,6 +1,6 @@
 # Installable configuration files
 
-Files cover git and vim.
+Files cover git, vim, rubygems and ruby-debug.
 
 ## Installation
 
