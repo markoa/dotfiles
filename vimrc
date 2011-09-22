@@ -107,3 +107,6 @@ set pastetoggle=<F2>
 
 " shortcut to run current spec
 map <F5> <ESC>:!spec -cfs %<ESC>
+
+" automatically delete trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
