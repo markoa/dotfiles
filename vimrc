@@ -29,7 +29,7 @@ augroup myfiletypes
   "autocmd FileType cpp set ai sw=4 sts=4 et
   autocmd BufRead *.cc set ai sw=4 sts=4 et
   autocmd BufRead *.hh set ai sw=4 sts=4 et
-  autocmd FileType ruby,eruby,yaml,cucumber,javascript,html set ai sw=2 sts=2 et
+  autocmd FileType ruby,eruby,yaml,cucumber,javascript,html,coffee set ai sw=2 sts=2 et
   autocmd BufRead,BufNewFile *.html.erb set ft=html.eruby
   autocmd BufRead *.css  set ai sw=4 sts=4 et
   "autocmd BufRead *.html set ai sw=2 sts=2 et formatoptions+=tl
