@@ -26,14 +26,9 @@ set number
 augroup myfiletypes
   " Clear old autocmds in group
   autocmd!
-  "autocmd FileType cpp set ai sw=4 sts=4 et
-  autocmd BufRead *.cc set ai sw=4 sts=4 et
-  autocmd BufRead *.hh set ai sw=4 sts=4 et
-  autocmd FileType ruby,eruby,yaml,cucumber,javascript,html,coffee set ai sw=2 sts=2 et
+  autocmd BufRead *.cc,*.hh set ai sw=4 sts=4 et
+  autocmd FileType ruby,eruby,yaml,cucumber,javascript,html,css,coffee set ai sw=2 sts=2 et
   autocmd BufRead,BufNewFile *.html.erb set ft=html.eruby
-  autocmd BufRead *.css  set ai sw=4 sts=4 et
-  "autocmd BufRead *.html set ai sw=2 sts=2 et formatoptions+=tl
-  autocmd FileType make set noexpandtab shiftwidth=8
 augroup END
 
 " * User Interface
@@ -107,6 +102,3 @@ set pastetoggle=<F2>
 
 " shortcut to run current spec
 map <F5> <ESC>:!spec -cfs %<ESC>
-
-" automatically delete trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
