@@ -99,6 +99,3 @@ map <Leader><Left> <ESC>:bp<CR>
 " prevent indentation madness when pasting in vim running inside terminal
 " do this before and after pasting
 set pastetoggle=<F2>
-
-" shortcut to run current spec
-map <F5> <ESC>:!spec -cfs %<ESC>
