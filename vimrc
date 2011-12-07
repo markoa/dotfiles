@@ -100,5 +100,5 @@ map <Leader><Left> <ESC>:bp<CR>
 " do this before and after pasting
 set pastetoggle=<F2>
 
-" QuickBuf shortcut (space-l)
-let g:qb_hotkey = "<Leader>l"
+" QuickBuf shortcut
+let g:qb_hotkey = "<Leader><Backspace>"
