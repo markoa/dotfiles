@@ -99,3 +99,6 @@ map <Leader><Left> <ESC>:bp<CR>
 " prevent indentation madness when pasting in vim running inside terminal
 " do this before and after pasting
 set pastetoggle=<F2>
+
+" QuickBuf shortcut (space-l)
+let g:qb_hotkey = "<Leader>l"
