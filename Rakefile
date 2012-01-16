@@ -1,7 +1,7 @@
 require 'rake'
 require 'erb'
 
-# Copied from https://github.com/ryanb/dotfiles
+# Originally copied from https://github.com/ryanb/dotfiles, eventually modified.
 
 desc "install the dot files into user's home directory"
 task :install do
@@ -47,6 +47,6 @@ def link_file(file)
     end
   else
     puts "linking ~/.#{file}"
-    system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
+    system %Q{ln -s "#{ENV['PWD']}/#{file}" "#{ENV['HOME']}/.#{file}"}
   end
 end
