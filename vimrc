@@ -101,4 +101,4 @@ map <Leader><Left> <ESC>:bp<CR>
 set pastetoggle=<F2>
 
 " QuickBuf shortcut
-let g:qb_hotkey = "<Leader>,"
+let g:qb_hotkey = "ff"
