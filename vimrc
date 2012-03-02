@@ -27,6 +27,7 @@ augroup myfiletypes
   " Clear old autocmds in group
   autocmd!
   autocmd BufRead *.cc,*.hh set ai sw=4 sts=4 et
+  autocmd BufRead *.md set ai sw=2 sts=2 et
   autocmd FileType ruby,eruby,yaml,cucumber,javascript,html,css,coffee set ai sw=2 sts=2 et
   autocmd BufRead,BufNewFile *.html.erb set ft=html.eruby
 augroup END
@@ -101,4 +102,4 @@ map <Leader><Left> <ESC>:bp<CR>
 set pastetoggle=<F2>
 
 " QuickBuf shortcut
-let g:qb_hotkey = "ff"
+let g:qb_hotkey = ",,"
