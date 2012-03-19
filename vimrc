@@ -2,6 +2,10 @@
 
 set t_Co=256
 
+" load solarized theme
+set background=dark
+colorscheme solarized
+
 " <Space> is the leader character
 let mapleader = " "
 
@@ -39,18 +43,6 @@ au GUIEnter * set lines=40 columns=164
 " font
 set guifont=*
 set guifont=DejaVu\ Sans\ Mono\ 9
-
-" have syntax highlighting in terminals which can display colours:
-if has('syntax') && (&t_Co > 2)
-  syntax on
-endif
-
-" pick a color scheme
-if has("gui_running")
-  colorscheme desertedoceanburnt
-else
-  colorscheme mrpink
-endif
 
 " have command-line completion <Tab> (for filenames, help topics, option names)
 " first list the available options and complete the longest common part, then
