@@ -3,7 +3,8 @@
 set t_Co=256
 
 " load solarized theme
-set background=dark
+set background=light
+syntax on
 colorscheme solarized
 
 " <Space> is the leader character
