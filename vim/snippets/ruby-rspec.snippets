@@ -53,9 +53,14 @@ snippet itshbe
   		${2:model}.should be_${3}
 	end
 
+# expectations
+snippet shr
+	should_receive(:${1:method})
 # matchers
 snippet sheq
 	${1:targe}.should == ${2}
 snippet shbe
 	${1:target}.should be_${2:result}
-
+# mocks
+snippet ano
+	as_null_object
