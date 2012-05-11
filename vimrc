@@ -3,7 +3,7 @@
 set t_Co=256
 
 " load solarized theme
-set background=light
+set background=dark
 syntax on
 colorscheme solarized
 
@@ -39,11 +39,19 @@ augroup END
 
 " * User Interface
 
-au GUIEnter * set lines=40 columns=164
+"au GUIEnter * set lines=40 columns=164
 
 " font
-set guifont=*
-set guifont=DejaVu\ Sans\ Mono\ 9
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    " Do Mac stuff here
+    set guifont=Monaco:h14
+  endif
+else
+  set guifont=*
+  set guifont=DejaVu\ Sans\ Mono\ 9
+endif
 
 " have command-line completion <Tab> (for filenames, help topics, option names)
 " first list the available options and complete the longest common part, then
