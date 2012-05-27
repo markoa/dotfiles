@@ -34,6 +34,12 @@ task :install do
   end
 end
 
+task :install_system_scripts do
+  ["darken", "lighten"].each do |file|
+    system %Q{sudo cp bin/#{file} /usr/local/bin/}
+  end
+end
+
 def replace_file(file)
   system %Q{rm -rf "$HOME/.#{file.sub('.erb', '')}"}
   link_file(file)
