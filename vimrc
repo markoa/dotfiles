@@ -104,3 +104,6 @@ set pastetoggle=<F2>
 
 " QuickBuf shortcut
 let g:qb_hotkey = ",,"
+
+:command Lighten set background=light
+:command Darken set background=dark
