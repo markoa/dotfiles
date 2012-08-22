@@ -20,17 +20,15 @@ snippet S
 	Sham.${1:attribute} { Faker::${2:Module}.${3:method} }
 
 snippet F
-	Factory(:${1:factory})${2}
+	FactoryGirl.create(:${1:factory})${2}
 snippet Fb
-	Factory.build(:${1:factory})${2}
-snippet Fc
-	Factory.create(:${1:factory})
+	FactoryGirl.build(:${1:factory})${2}
 snippet Fa
-	Factory.attributes_for(:${1:factory})
+	FactoryGirl.attributes_for(:${1:factory})
 snippet Fs
-	Factory.stub(:${1:factory})
+	FactoryGirl.build_stubbed(:${1:factory})
 snippet Fw
-	Factory(:${1:factory}, :${2})
+	FactoryGirl.create(:${1:factory}, :${2})
 snippet Fbw
-	Factory.build(:${1:factory}, :${2})
+	FactoryGirl.build_stubbed(:${1:factory}, :${2})
 
