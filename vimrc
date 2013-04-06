@@ -1,3 +1,26 @@
+" # Plugins, managed by vundle
+"
+" https://github.com/gmarik/vundle
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+"
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle "gmarik/vundle"
+
+Bundle "vim-scripts/QuickBuf"
+let g:qb_hotkey = ",," " QuickBuf shortcut
+
+Bundle "tpope/vim-rails.git"
+Bundle "kchmck/vim-coffee-script"
+
 " # General
 
 set nocompatible " use Vim's default settings, not Vi's
@@ -20,8 +43,6 @@ let mapleader = " " " set <Space> as <Leader>
 map <Leader><Right> <ESC>:bn<CR>
 map <Leader><Left> <ESC>:bp<CR>
 
-let g:qb_hotkey = ",," " QuickBuf shortcut
-
 " # Custom commands
 
 :command Lighten set background=light
@@ -43,7 +64,7 @@ set expandtab    " make tabs into spaces (set by tabstop)
 set smarttab     " smarter tab levels
 
 set autoindent
-filetype plugin indent on     " also required for vundle
+filetype plugin indent on " also required for vundle
 
 set wildmode=list:longest,full " cmd line: list and complete longer matches 1st
 
@@ -65,24 +86,3 @@ set shortmess+=r " "[RO]" instead of "[readonly]" in the message line
 
 set showmode " display the current mode
 set showcmd  " display partially-typed commands in the status line
-
-" # Plugins, managed by vundle
-"
-" https://github.com/gmarik/vundle
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-"
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle "gmarik/vundle"
-
-Bundle "vim-scripts/QuickBuf"
-
-Bundle "tpope/vim-rails.git"
