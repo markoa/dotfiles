@@ -5,6 +5,9 @@ filetype off     " required by vundle
 "
 " https://github.com/gmarik/vundle
 "
+" installation:
+" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+"
 " Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install(update) bundles
