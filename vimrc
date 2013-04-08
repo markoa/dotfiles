@@ -27,6 +27,10 @@ let g:qb_hotkey = ",," " QuickBuf shortcut
 Bundle "tpope/vim-rails.git"
 Bundle "kchmck/vim-coffee-script"
 
+Bundle "altercation/vim-colors-solarized"
+set background=dark
+colorscheme solarized
+
 " # General
 
 set encoding=utf-8
