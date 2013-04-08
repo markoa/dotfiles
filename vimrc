@@ -1,3 +1,6 @@
+set nocompatible " use Vim's default settings, not Vi's
+filetype off     " required by vundle
+
 " # Plugins, managed by vundle
 "
 " https://github.com/gmarik/vundle
@@ -22,9 +25,6 @@ Bundle "tpope/vim-rails.git"
 Bundle "kchmck/vim-coffee-script"
 
 " # General
-
-set nocompatible " use Vim's default settings, not Vi's
-filetype off     " required by vundle
 
 set encoding=utf-8
 
