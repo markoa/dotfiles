@@ -23,6 +23,7 @@ Bundle "gmarik/vundle"
 
 Bundle "vim-scripts/QuickBuf"
 let g:qb_hotkey = ",," " QuickBuf shortcut
+Bundle "vim-scripts/BufOnly.vim"
 
 Bundle "tpope/vim-rails.git"
 Bundle "renderedtext/vim-bdd"
