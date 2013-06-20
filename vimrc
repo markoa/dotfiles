@@ -35,6 +35,8 @@ Bundle "altercation/vim-colors-solarized"
 set background=dark
 colorscheme solarized
 
+Bundle "sickill/vim-pasta"
+
 " # General
 
 set encoding=utf-8
