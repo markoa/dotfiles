@@ -29,6 +29,8 @@ Bundle "tpope/vim-rails.git"
 Bundle "renderedtext/vim-bdd"
 Bundle "kchmck/vim-coffee-script"
 
+Bundle "guns/vim-clojure-static"
+
 Bundle "markoa/snipmate.vim"
 
 Bundle "altercation/vim-colors-solarized"
