@@ -25,6 +25,10 @@ Bundle "vim-scripts/QuickBuf"
 let g:qb_hotkey = ",," " QuickBuf shortcut
 Bundle "vim-scripts/BufOnly.vim"
 
+Bundle "kien/ctrlp.vim"
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 Bundle "tpope/vim-rails.git"
 Bundle "renderedtext/vim-bdd"
 Bundle "kchmck/vim-coffee-script"
