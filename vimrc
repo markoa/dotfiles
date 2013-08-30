@@ -30,6 +30,10 @@ Bundle "renderedtext/vim-bdd"
 Bundle "kchmck/vim-coffee-script"
 
 Bundle "guns/vim-clojure-static"
+Bundle "tpope/vim-classpath"
+Bundle "tpope/vim-fireplace"
+map cpt :w<CR>:Require<CR>:Eval (run-tests)<CR>
+map cpT :w<CR>:Require<CR>:Eval (run-all-tests)<CR>
 
 Bundle "markoa/snipmate.vim"
 
