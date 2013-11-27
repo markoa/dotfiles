@@ -38,6 +38,7 @@ map cpT :w<CR>:Require<CR>:Eval (run-all-tests)<CR>
 Bundle "markoa/snipmate.vim"
 
 Bundle "altercation/vim-colors-solarized"
+Bundle "sickill/vim-monokai"
 set background=dark
 colorscheme solarized
 
