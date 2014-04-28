@@ -48,6 +48,8 @@ colorscheme solarized
 
 Bundle "sickill/vim-pasta"
 
+Bundle "tpope/vim-surround"
+
 " # General
 
 set encoding=utf-8
