@@ -9,46 +9,48 @@ filetype off     " required by vundle
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
 "
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle "gmarik/vundle"
+Plugin 'gmarik/vundle'
 
-Bundle "vim-scripts/QuickBuf"
+Plugin 'vim-scripts/QuickBuf'
 let g:qb_hotkey = ",," " QuickBuf shortcut
-Bundle "vim-scripts/BufOnly.vim"
+Plugin 'vim-scripts/BufOnly.vim'
 
 Bundle "kien/ctrlp.vim"
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-Bundle "tpope/vim-rails.git"
-Bundle "renderedtext/vim-bdd"
-Bundle "kchmck/vim-coffee-script"
+Plugin 'tpope/vim-rails.git'
+Plugin 'renderedtext/vim-bdd'
+Plugin 'kchmck/vim-coffee-script'
 
-Bundle "guns/vim-clojure-static"
-Bundle "tpope/vim-classpath"
-Bundle "tpope/vim-fireplace"
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-classpath'
+Plugin 'tpope/vim-fireplace'
 map cpt :w<CR>:Require<CR>:Eval (run-tests)<CR>
 map cpT :w<CR>:Require<CR>:Eval (run-all-tests)<CR>
 
-Bundle "markoa/snipmate.vim"
+Plugin 'markoa/snipmate.vim'
 
-Bundle "altercation/vim-colors-solarized"
-Bundle "sickill/vim-monokai"
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'sickill/vim-monokai'
+
+Plugin 'sickill/vim-pasta'
+
+call vundle#end()
+filetype plugin indent on " required for vundle
+
 set background=dark
 colorscheme solarized
-
-Bundle "sickill/vim-pasta"
-
-Bundle "tpope/vim-surround"
 
 " # General
 
@@ -90,7 +92,6 @@ set expandtab    " make tabs into spaces (set by tabstop)
 set smarttab     " smarter tab levels
 
 set autoindent
-filetype plugin indent on " also required for vundle
 
 set wildmode=list:longest,full " cmd line: list and complete longer matches 1st
 
