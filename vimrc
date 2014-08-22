@@ -113,3 +113,6 @@ set shortmess+=r " "[RO]" instead of "[readonly]" in the message line
 
 set showmode " display the current mode
 set showcmd  " display partially-typed commands in the status line
+
+" # File type detection
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
