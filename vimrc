@@ -32,6 +32,7 @@ let g:ctrlp_cmd = 'CtrlP'
 Plugin 'tpope/vim-rails.git'
 Plugin 'renderedtext/vim-bdd'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'othree/html5.vim'
 
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-classpath'
