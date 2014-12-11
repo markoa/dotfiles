@@ -92,6 +92,9 @@ set shiftwidth=2 " set the default shift width for indents
 set expandtab    " make tabs into spaces (set by tabstop)
 set smarttab     " smarter tab levels
 
+" Remind me what makes a nice Git commit.
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
 set autoindent
 
 set wildmode=list:longest,full " cmd line: list and complete longer matches 1st
