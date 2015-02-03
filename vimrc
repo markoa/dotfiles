@@ -47,6 +47,8 @@ Plugin 'sickill/vim-monokai'
 
 Plugin 'sickill/vim-pasta'
 
+Plugin 'markoa/vim-statline'
+
 call vundle#end()
 filetype plugin indent on " required for vundle
 
@@ -117,10 +119,6 @@ set shortmess+=r " "[RO]" instead of "[readonly]" in the message line
 
 set showmode " display the current mode
 set showcmd  " display partially-typed commands in the status line
-
-set laststatus=2    " Always display the status line
-set statusline=%f\ -\ FileType:\ %y
-set statusline+=col:\ %c, " Current column
 
 " # File type detection
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
