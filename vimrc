@@ -97,6 +97,9 @@ set smarttab     " smarter tab levels
 " Remind me what makes a nice Git commit.
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
+" Also for plain text files.
+autocmd BufRead,BufNewFile *.md setlocal spell wrap wrapmargin=2 textwidth=80
+
 set autoindent
 
 set wildmode=list:longest,full " cmd line: list and complete longer matches 1st
