@@ -49,6 +49,9 @@ Plugin 'sickill/vim-pasta'
 
 Plugin 'markoa/vim-statline'
 
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
+
 call vundle#end()
 filetype plugin indent on " required for vundle
 
