@@ -35,7 +35,7 @@ task :install do
 end
 
 task :install_vundle do
-  system %Q{git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle}
+  system %Q{git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim}
   system %Q{vim +PluginInstall +qall}
 end
 
