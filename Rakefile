@@ -34,6 +34,11 @@ task :install do
   end
 end
 
+task :install_vundle do
+  system %Q{git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle}
+  system %Q{vim +PluginInstall +qall}
+end
+
 task :install_system_scripts do
   ["darken", "lighten"].each do |file|
     system %Q{sudo cp bin/#{file} /usr/local/bin/}
