@@ -34,16 +34,10 @@ Plugin 'renderedtext/vim-bdd'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'othree/html5.vim'
 
-Plugin 'guns/vim-clojure-static'
-Plugin 'tpope/vim-classpath'
-Plugin 'tpope/vim-fireplace'
-map cpt :w<CR>:Require<CR>:Eval (run-tests)<CR>
-map cpT :w<CR>:Require<CR>:Eval (run-all-tests)<CR>
-
 Plugin 'markoa/snipmate.vim'
 
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'sickill/vim-monokai'
+Plugin 'trevordmiller/nova-vim'
 
 Plugin 'sickill/vim-pasta'
 
@@ -55,8 +49,8 @@ Plugin 'Shougo/vimfiler.vim'
 call vundle#end()
 filetype plugin indent on " required for vundle
 
-set background=dark
-colorscheme solarized
+"set background=dark
+colorscheme nova
 
 " # General
 
