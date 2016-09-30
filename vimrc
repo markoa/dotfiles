@@ -56,6 +56,10 @@ colorscheme nova
 
 set encoding=utf-8
 
+" Make backspace for on Macs
+" http://vim.wikia.com/wiki/Backspace_and_delete_problems
+set backspace=indent,eol,start
+
 set clipboard+=unnamed " yanks go to clipboard
 set pastetoggle=<F2>   " toggle paste mode for sane pasting inside the terminal
 
