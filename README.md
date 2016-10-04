@@ -4,4 +4,4 @@ Files cover git, vim, rubygems and ruby-debug.
 
 ## Installation
 
-    rake install
+    rake install && rake install_vundle
