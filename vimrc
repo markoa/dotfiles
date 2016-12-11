@@ -50,7 +50,7 @@ call vundle#end()
 filetype plugin indent on " required for vundle
 
 "set background=dark
-colorscheme nova
+"colorscheme solarized
 
 " # General
 
@@ -89,6 +89,7 @@ set textwidth=78
 
 syntax on
 
+set backspace=indent,eol,start " solves some problems on Mac
 set tabstop=2    " set the default tabstop
 set softtabstop=2
 set shiftwidth=2 " set the default shift width for indents
@@ -99,7 +100,7 @@ set smarttab     " smarter tab levels
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Also for plain text files.
-autocmd BufRead,BufNewFile *.md setlocal spell wrap wrapmargin=2 textwidth=80
+autocmd BufRead,BufNewFile *.md setlocal wrap wrapmargin=2 textwidth=80
 
 set autoindent
 
