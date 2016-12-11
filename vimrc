@@ -21,6 +21,7 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'
 
+" Buffer and file navigation
 Plugin 'vim-scripts/QuickBuf'
 let g:qb_hotkey = ",," " QuickBuf shortcut
 Plugin 'vim-scripts/BufOnly.vim'
@@ -29,22 +30,26 @@ Bundle "kien/ctrlp.vim"
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
+
+" Language support
 Plugin 'tpope/vim-rails.git'
 Plugin 'renderedtext/vim-bdd'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
 
 Plugin 'markoa/snipmate.vim'
 
+" Themes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'trevordmiller/nova-vim'
 
+" Pasting with indentation adjusted to destination context
 Plugin 'sickill/vim-pasta'
 
 Plugin 'markoa/vim-statline'
-
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimfiler.vim'
 
 call vundle#end()
 filetype plugin indent on " required for vundle
