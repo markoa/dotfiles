@@ -89,7 +89,6 @@ set textwidth=78
 
 syntax on
 
-set backspace=indent,eol,start " solves some problems on Mac
 set tabstop=2    " set the default tabstop
 set softtabstop=2
 set shiftwidth=2 " set the default shift width for indents
