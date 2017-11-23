@@ -28,5 +28,4 @@ setopt incappendhistory  # Immediately append to the history file, not just when
 
 source ~/.aliases
 source ~/.vimforzsh
-
-export GEMFURY_PASSWORD=FILLME
+source ~/.passwords
