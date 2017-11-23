@@ -5,6 +5,8 @@ require 'erb'
 
 desc "install the dot files into user's home directory"
 task :install do
+  install_ohmyzsh
+
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README.md LICENSE].include? file
@@ -44,6 +46,10 @@ task :install_system_scripts do
   ["darken", "lighten"].each do |file|
     system %Q{sudo cp bin/#{file} /usr/local/bin/}
   end
+end
+
+def install_ohmyzsh
+  system %Q{sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"}
 end
 
 def replace_file(file)
