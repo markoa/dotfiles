@@ -3,10 +3,10 @@ filetype off     " required by vundle
 
 " # Plugins, managed by vundle
 "
-" https://github.com/gmarik/vundle
+" https://github.com/VundleVim/Vundle
 "
 " installation:
-" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
 "
 " Brief help
 " :PluginList          - list configured bundles
@@ -19,7 +19,7 @@ filetype off     " required by vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Buffer and file navigation
 Plugin 'vim-scripts/QuickBuf'
@@ -44,7 +44,6 @@ Plugin 'markoa/snipmate.vim'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'trevordmiller/nova-vim'
 
 " Pasting with indentation adjusted to destination context
 Plugin 'sickill/vim-pasta'

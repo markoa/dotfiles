@@ -38,7 +38,7 @@ end
 
 desc "Install Vundle for Vim"
 task :install_vundle do
-  system %Q{git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim}
+  system %Q{git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim}
   system %Q{vim +PluginInstall +qall}
 end
 
