@@ -1,5 +1,12 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/vagrant/.oh-my-zsh
+case `uname` in
+  Darwin)
+    export ZSH=/Users/marko/.oh-my-zsh
+  ;;
+  Linux)
+    export ZSH=/home/vagrant/.oh-my-zsh
+  ;;
+esac
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="sunaku"
