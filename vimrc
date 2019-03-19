@@ -53,7 +53,7 @@ Plugin 'markoa/vim-statline'
 call vundle#end()
 filetype plugin indent on " required for vundle
 
-set background=light
+set background=dark
 "colorscheme solarized
 
 " # General
