@@ -36,9 +36,9 @@ Plugin 'Shougo/vimfiler.vim'
 " Language support
 Plugin 'tpope/vim-rails.git'
 Plugin 'renderedtext/vim-bdd'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'fatih/vim-go'
 
 Plugin 'markoa/snipmate.vim'
 
