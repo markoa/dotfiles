@@ -30,15 +30,11 @@ Bundle "kien/ctrlp.vim"
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimfiler.vim'
-
 " Language support
 Plugin 'tpope/vim-rails.git'
 Plugin 'renderedtext/vim-bdd'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'fatih/vim-go'
 
 Plugin 'markoa/snipmate.vim'
 
