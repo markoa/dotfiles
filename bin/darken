@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sed -i 's/^set background=light/set background=dark/g' ~/.vimrc

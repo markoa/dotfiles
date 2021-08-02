@@ -42,12 +42,6 @@ task :install_vundle do
   system %Q{vim +PluginInstall +qall}
 end
 
-task :install_system_scripts do
-  ["darken", "lighten"].each do |file|
-    system %Q{sudo cp bin/#{file} /usr/local/bin/}
-  end
-end
-
 def install_ohmyzsh
   system %Q{sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"}
 end
