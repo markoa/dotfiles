@@ -13,6 +13,11 @@ namespace :install do
     system %Q{vim +PluginInstall +qall}
   end
 
+  desc "Install Homebrew"
+  task :homebrew do
+    system %Q{/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"}
+  end
+
   desc "Install the dot files into user's home directory"
   task :dotfiles do
     replace_all = false
