@@ -1,7 +1,11 @@
 # Installable configuration files
 
-Files cover git, vim, rubygems and ruby-debug.
+For git, vim, zsh.
 
-## Installation
+## Usage
 
-    rake install && rake install_vundle
+```
+rake install:ohmyzsh
+rake install:vundle
+rake install:dotfiles
+```
