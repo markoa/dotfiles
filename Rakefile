@@ -8,7 +8,7 @@ task :install do
   install_ohmyzsh
 
   replace_all = false
-  Dir['*'].each do |file|
+  Dir['*'].select { |f| File.file?(f) }.each do |file|
     next if %w[Rakefile README.md LICENSE].include? file
     
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
