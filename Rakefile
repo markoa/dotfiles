@@ -13,6 +13,11 @@ namespace :install do
     system %Q{vim +PluginInstall +qall}
   end
 
+  desc "install the dot files into user's home directory"
+  task :install do
+    install_ohmyzsh
+  end
+
   desc "Install Homebrew"
   task :homebrew do
     system %Q{/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"}

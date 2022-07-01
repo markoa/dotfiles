@@ -35,6 +35,7 @@ Plugin 'tpope/vim-rails.git'
 Plugin 'renderedtext/vim-bdd'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'MaxMEllon/vim-jsx-pretty'
 
 Plugin 'markoa/snipmate.vim'
 
@@ -126,3 +127,6 @@ set showcmd  " display partially-typed commands in the status line
 
 " # File type detection
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+" # solve E363: pattern uses more memory than 'maxmempattern'
+" # https://github.com/vim/vim/issues/2049
+set mmp=5000
